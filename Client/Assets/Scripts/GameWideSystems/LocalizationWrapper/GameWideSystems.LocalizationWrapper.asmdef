@@ -1,0 +1,16 @@
+{
+    "name": "GameWideSystems.LocalizationWrapper",
+    "rootNamespace": "",
+    "references": [
+        "GUID:04eab667599352449b2eab946f89e887"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
