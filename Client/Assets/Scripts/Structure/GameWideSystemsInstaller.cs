@@ -2,6 +2,7 @@
 using GameWideSystems.GameSceneManager;
 using GameWideSystems.GameStateManagement;
 using GameWideSystems.LocalizationWrapper;
+using GameWideSystems.SessionManager;
 using GameWideSystems.UIManagement;
 using UnityEngine;
 using Zenject;
@@ -23,6 +24,13 @@ namespace Structure.GameInstalling
             InstallGameStateManager();
             InstallLocalization();
             InstallUIManager();
+            InstallSession();
+        }
+
+        private void InstallSession()
+        {
+            Container.Bind<SessionContainer>().To<SessionContainer>().AsSingle();
+            Container.Bind<ISessionBuilder>().To<SessionBuilder>().AsSingle();
         }
 
         private void InstallUIManager()

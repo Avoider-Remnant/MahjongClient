@@ -2,11 +2,12 @@
 {
     public class SessionContainer
     {
-        public SessionContainer()
-        {
-            Session = new Session();
-        }
+        public ISession Session { get; private set; }
 
-        public ISession Session { get; set; }
+        public void BuildSession(ISessionBuilder sessionBuilder)
+        {
+            Session = sessionBuilder.Build();
+        }
+        
     }
 }

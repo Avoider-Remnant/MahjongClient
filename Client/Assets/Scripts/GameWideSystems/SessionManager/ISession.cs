@@ -1,4 +1,4 @@
-﻿namespace GameWideSystems.SessionManager
+namespace GameWideSystems.SessionManager
 {
     public interface ISession
     {
